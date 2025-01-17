@@ -9,3 +9,6 @@ https://docs.expo.dev/
 ## Expo Installation
 
 https://docs.expo.dev/router/installation/#manual-installation
+
+## Icons we are using is from Expo Icons
+https://icons.expo.fyi/Index
