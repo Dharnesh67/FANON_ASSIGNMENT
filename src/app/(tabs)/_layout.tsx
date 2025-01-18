@@ -23,7 +23,7 @@ const TabsLayout = () => {
         name="create"
         options={{
           title: "Create Post",
-          tabBarIcon: ({ color }) => <FontAwesome size={30} name="plus-circle" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome size={30} name="plus" color={color} />,
         }}
       />
       <Tabs.Screen

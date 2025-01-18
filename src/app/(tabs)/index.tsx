@@ -6,7 +6,7 @@ import { FontAwesome, Ionicons, Feather, AntDesign } from "@expo/vector-icons";
 import Postlistitem from "../../components/postlistitem";
 // import { ScrollView } from "react-native-gesture-handler";
 
-const index = () => {
+const index = () =>   {
   return (
     <FlatList
       data={post}

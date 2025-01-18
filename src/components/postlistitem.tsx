@@ -2,7 +2,9 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import ZoomableImage from "../components/zooomedimage";
 import { FontAwesome, Ionicons, Feather, AntDesign } from "@expo/vector-icons";
+import { useState } from "react";
 const Postlistitem = (props: any) => {
+    const [isliked, setisliked] = useState(false);
   const post = props.post;
   return (
     <View>
@@ -21,12 +23,12 @@ const Postlistitem = (props: any) => {
         />
         <View className="icons flex-row justify-between p-3">
           <View className="flex-row gap-3">
-            <AntDesign name="hearto" size={20} />
-            <Ionicons name="chatbubble-outline" size={20} />
-            <Feather name="send" size={20} />
+          {isliked ? <AntDesign name="hearto"   onPress={() => setisliked(!isliked)} size={23} />: <AntDesign  name="heart" color="red" size={23} onPress={() => setisliked(!isliked)} />}
+            <Ionicons name="chatbubble-outline" size={23} />
+            <Feather name="send" size={23} />
           </View>
           <View>
-            <FontAwesome name="bookmark-o" size={20} />
+            <FontAwesome name="bookmark-o" size={23} />
           </View>
         </View>
       </View>
