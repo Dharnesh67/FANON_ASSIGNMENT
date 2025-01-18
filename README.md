@@ -15,3 +15,4 @@ https://icons.expo.fyi/Index
 
 ## Nativewind for styling
 https://www.nativewind.dev/getting-started/expo-router
+
