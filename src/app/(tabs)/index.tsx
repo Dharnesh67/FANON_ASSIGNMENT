@@ -13,6 +13,7 @@ const index = () => {
       contentContainerStyle={{ gap: 5 }}
       renderItem={({ item }) => <Postlistitem post={item} />}
       keyExtractor={(item) => item.id.toString()}
+      showsVerticalScrollIndicator={false}
     />
   );
 };

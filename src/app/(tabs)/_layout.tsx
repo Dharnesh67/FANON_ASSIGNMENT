@@ -37,7 +37,7 @@ const TabsLayout = () => {
         name="reel"
         options={{
           title: "Reels",
-          tabBarIcon: ({ color }) => <FontAwesome size={30} name="user" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome size={30} name="play" color={color} />,
           headerShown: false, // Hides the header for the Reels screen
         }}
       />
