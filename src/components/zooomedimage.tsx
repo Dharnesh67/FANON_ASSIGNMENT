@@ -1,57 +1,16 @@
-import React, { useState } from 'react';
-import { View, StyleSheet, Animated, Image, Pressable } from 'react-native';
-import { GestureHandlerRootView, PanGestureHandler } from 'react-native-gesture-handler';
+import React, { useState } from "react";
+import { StyleSheet, Animated, Image, Dimensions } from "react-native";
+import { GestureHandlerRootView, PanGestureHandler, State } from "react-native-gesture-handler";
 
-const ZoomableImage = ({ imageSource }:any) => {
+const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
+
+const ZoomableImage = ({ imageSource }: any) => {
   const [zoomed, setZoomed] = useState(false);
-  const scale = new Animated.Value(1);
-  const translateX = new Animated.Value(0);
-  const translateY = new Animated.Value(0);
-  const backgroundOpacity = new Animated.Value(0);
+  const scale = React.useRef(new Animated.Value(1)).current;
+  const translateX = React.useRef(new Animated.Value(0)).current;
+  const translateY = React.useRef(new Animated.Value(0)).current;
 
-  const handlePressIn = () => {
-    setZoomed(true);
-    Animated.parallel([
-      Animated.timing(scale, {
-        toValue: 2, // Zoom level
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(backgroundOpacity, {
-        toValue: 0.5, // Background dim level
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
-  };
-
-  const handlePressOut = () => {
-    setZoomed(false);
-    Animated.parallel([
-      Animated.timing(scale, {
-        toValue: 1, // Reset zoom
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(translateX, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(translateY, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(backgroundOpacity, {
-        toValue: 0, // Reset dim
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
-  };
-
-  const handleGesture = Animated.event(
+  const handleGestureEvent = Animated.event(
     [
       {
         nativeEvent: {
@@ -63,38 +22,50 @@ const ZoomableImage = ({ imageSource }:any) => {
     { useNativeDriver: true }
   );
 
+  const handleStateChange = (event: any) => {
+    const { state, numberOfPointers } = event.nativeEvent;
+
+    if (state === State.END) {
+      if (!zoomed && numberOfPointers === 1) {
+        // Double-tap detection
+        setZoomed(true);
+        Animated.spring(scale, {
+          toValue: 2,
+          useNativeDriver: true,
+        }).start();
+      } else {
+        // Reset zoom and translation
+        setZoomed(false);
+        Animated.parallel([
+          Animated.spring(scale, {
+            toValue: 1,
+            useNativeDriver: true,
+          }),
+          Animated.spring(translateX, {
+            toValue: 0,
+            useNativeDriver: true,
+          }),
+          Animated.spring(translateY, {
+            toValue: 0,
+            useNativeDriver: true,
+          }),
+        ]).start();
+      }
+    }
+  };
+
   return (
     <GestureHandlerRootView style={styles.container}>
-      {/* Background dim */}
-      {zoomed && (
-        <Animated.View
-          style={[
-            styles.overlay,
-            { opacity: backgroundOpacity },
-          ]}
-        />
-      )}
-
-      <PanGestureHandler onGestureEvent={handleGesture}>
+      <PanGestureHandler
+        onGestureEvent={handleGestureEvent}
+        onHandlerStateChange={handleStateChange}
+      >
         <Animated.View
           style={{
-            transform: [
-              { scale },
-              { translateX },
-              { translateY },
-            ],
+            transform: [{ scale }, { translateX }, { translateY }],
           }}
         >
-          <Pressable
-            onPressIn={handlePressIn}
-            onPressOut={handlePressOut}
-          >
-            <Image
-              source={imageSource}
-              style={styles.image}
-              resizeMode="contain"
-            />
-          </Pressable>
+          <Image source={imageSource} style={styles.image} resizeMode="contain" />
         </Animated.View>
       </PanGestureHandler>
     </GestureHandlerRootView>
@@ -104,16 +75,13 @@ const ZoomableImage = ({ imageSource }:any) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'black',
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
   },
   image: {
-    width: 200,
-    height: 200,
+    width: screenWidth,
+    height: screenHeight * 0.3 ,
   },
 });
 
