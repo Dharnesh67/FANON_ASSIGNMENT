@@ -12,3 +12,6 @@ https://docs.expo.dev/router/installation/#manual-installation
 
 ## Icons we are using is from Expo Icons
 https://icons.expo.fyi/Index
+
+## Nativewind for styling
+https://www.nativewind.dev/getting-started/expo-router

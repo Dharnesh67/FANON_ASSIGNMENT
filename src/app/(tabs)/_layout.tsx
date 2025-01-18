@@ -4,8 +4,8 @@ import React from "react";
 import { Tabs } from "expo-router";
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "black", tabBarShowLabel: false,headerTitleStyle:{fontWeight:700 } }}>
-      <Tabs.Screen
+    <Tabs  screenOptions={{ tabBarActiveTintColor: "black", tabBarShowLabel: false, headerTitleStyle:{fontWeight:700 } }}>
+      <Tabs.Screen 
         name="index"
         options={{
           title: "Home",

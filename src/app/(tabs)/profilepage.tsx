@@ -3,7 +3,7 @@ import React from "react";
 
 const profilepage = () => {
   return (
-    <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+    <View className='font-3xl flex flex-1 items-center justify-center ' >
       <Text>Profile</Text>
     </View>
   );

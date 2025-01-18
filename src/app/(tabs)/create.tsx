@@ -3,8 +3,8 @@ import React from 'react'
 
 const Create = () => {
   return (
-    <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-      <Text>Post</Text>
+    <View className='flex flex-1 items-center justify-center text-purple-500' >
+      <Text className='text-5xl'>Post</Text>
     </View>
   )
 }
