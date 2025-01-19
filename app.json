@@ -20,7 +20,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.dharmesh_assignment"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -41,6 +45,14 @@
           "supportsPictureInPicture": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "87ab27a9-c3ff-4de1-a6af-34c541b0260f"
+      }
+    }
   }
 }
