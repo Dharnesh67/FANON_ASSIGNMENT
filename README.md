@@ -8,7 +8,7 @@ https://docs.expo.dev/
 ![alt text](photo_2025-01-20_00-21-29.jpg)
 ![alt text](photo_2025-01-20_00-21-00.jpg)
 ## Working Video
-[Watch the video](video_2025-01-20_00-21-34.mp4)
+https://drive.google.com/file/d/1TUPj2LQcjXZV7Pde0d-JBn6JTuq7HgoY/view?usp=sharing
 ## Expo Installation
 
 https://docs.expo.dev/router/installation/#manual-installation
