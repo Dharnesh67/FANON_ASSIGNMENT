@@ -4,7 +4,12 @@
 We Are using Expo to build the app. Expo is a free and open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
 https://docs.expo.dev/
 
-
+## First step I did not know the react native so i learned it 
+![alt text](photo_2025-01-20_00-21-29.jpg)
+![alt text](photo_2025-01-20_00-21-00.jpg)
+<video controls src="video_2025-01-20_00-21-34.mp4" title="
+"></video>
+## Working Video 
 
 ## Expo Installation
 
