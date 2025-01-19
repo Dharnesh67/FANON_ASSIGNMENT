@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, Dimensions } from "react-native";
-import VideoScreen from "../../components/videoscreen";
+import VideoScreen from "../components/videoscreen";
 
 const { height } = Dimensions.get("window");
 
@@ -11,7 +11,9 @@ const reel = () => {
   const fetchVideos = async () => {
     const apiKey = "39496842-90b2dd2ff2fe77ae992b7d5a8"; // Replace with your actual API key
     try {
-      const response = await fetch(`https://pixabay.com/api/videos/?key=${apiKey}&q=nature`);
+      const response = await fetch(
+        `https://pixabay.com/api/videos/?key=${apiKey}&q=nature`
+      );
       const data = await response.json();
       setVideos(data.hits);
     } catch (error) {
@@ -40,7 +42,7 @@ const reel = () => {
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View className="h-screen">
-            <VideoScreen videoSource={item.videos.small.url} />
+            <VideoScreen videoSource={item.videos.medium.url} />
           </View>
         )}
         pagingEnabled

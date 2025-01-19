@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const PIXABAY_API_KEY = 'YOUR_PIXABAY_API_KEY'; // Replace with your API key
+const PIXABAY_API_KEY = '39496842-90b2dd2ff2fe77ae992b7d5a8'; // Replace with your API key
 const PIXABAY_API_URL = 'https://pixabay.com/api/';
 
 export const fetchRandomImage = async (query = 'avatar') => {

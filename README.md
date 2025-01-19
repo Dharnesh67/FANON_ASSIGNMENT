@@ -33,3 +33,7 @@ https://docs.expo.dev/versions/latest/sdk/video/
 
 ## Cloudinary 
 https://cloudinary.com/documentation/react_native_integration
+
+
+## Pixa Bay
+https://pixabay.com/api/docs/
