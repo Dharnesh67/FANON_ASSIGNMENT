@@ -1,10 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
-
+import Pinchable from 'react-native-pinchable';
 const profilepage = () => {
   return (
-    <View className='font-3xl flex flex-1 items-center justify-center ' >
-      <Text>Profile</Text>
+    <View>
+      {/* <Pinchable></Pinchable> */}
+      <Image
+        source={{ uri: "https://cdn.pixabay.com/photo/2025/01/13/19/40/horse-9331340_1280.jpg" }}
+        className="w-full aspect-square"
+        resizeMode="contain"
+      />
     </View>
   );
 };

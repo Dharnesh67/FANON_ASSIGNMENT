@@ -16,3 +16,5 @@ https://icons.expo.fyi/Index
 ## Nativewind for styling
 https://www.nativewind.dev/getting-started/expo-router
 
+## we can use pinchable for zooming in and out
+https://www.npmjs.com/package/react-native-pinchable
