@@ -7,8 +7,8 @@ https://docs.expo.dev/
 ## First step I did not know the react native so i learned it 
 ![alt text](photo_2025-01-20_00-21-29.jpg)
 ![alt text](photo_2025-01-20_00-21-00.jpg)
-## Working Video 
-<video controls src="video_2025-01-20_00-21-34.mp4" title="video"></video>
+## Working Video
+[Watch the video](video_2025-01-20_00-21-34.mp4)
 ## Expo Installation
 
 https://docs.expo.dev/router/installation/#manual-installation
