@@ -18,3 +18,10 @@ https://www.nativewind.dev/getting-started/expo-router
 
 ## we can use pinchable for zooming in and out
 https://www.npmjs.com/package/react-native-pinchable
+
+## Image picker from expo
+https://docs.expo.dev/tutorial/image-picker/
+
+
+## double tap gesture added
+https://docs.expo.dev/tutorial/gestures/#add-a-tap-gesture

@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "isvideo": "false",
     "image": "samples/landscapes/beach-boat",
     "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     "caption": "A peaceful beach with a boat on the shore. Perfect for a relaxing vacation!",
@@ -13,8 +14,9 @@
   },
   {
     "id": "2",
+    "isvideo": "true",
     "image": "samples/woman-on-a-football-field",
-    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
+    "video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "caption": "A determined athlete practicing on a football field under the sunset.",
     "user": {
       "id": "u2",
@@ -25,6 +27,7 @@
   },
   {
     "id": "3",
+    "isvideo": "false",
     "image": "samples/dessert-on-a-plate",
     "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
     "caption": "A delicious dessert that looks like it’s straight out of a gourmet kitchen.",
@@ -37,6 +40,7 @@
   },
   {
     "id": "4",
+    "isvideo": "false",
     "image": "samples/balloons",
     "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
     "caption": "Colorful balloons floating in the sky, spreading joy and happiness.",
@@ -49,6 +53,20 @@
   },
   {
     "id": "5",
+    "isvideo": "false",
+    "image": "samples/woman-on-a-football-field",
+    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
+    "caption": "A determined athlete practicing on a football field under the sunset.",
+    "user": {
+      "id": "u2",
+      "avatar_url": "samples/people/smiling-man",
+      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "username": "sportsfanatic123"
+    }
+  },
+  {
+    "id": "6",
+    "isvideo": "false",
     "image": "samples/mountain-sunrise",
     "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
     "caption": "A breathtaking view of the mountains at sunrise, perfect for adventure lovers.",
