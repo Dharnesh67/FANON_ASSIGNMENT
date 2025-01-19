@@ -16,7 +16,7 @@
     "id": "2",
     "isvideo": "true",
     "image": "samples/woman-on-a-football-field",
-    "video_url": "",
+    "video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "caption": "A determined athlete practicing on a football field under the sunset.",
     "user": {
       "id": "u2",
