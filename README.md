@@ -1,5 +1,13 @@
 # FANON_ASSIGNMENT
+##TASK COMPLETED  ✅
 
+1.FETCHED RANDOMIMAGE FROM PIXABAY AND SHOWN AS A CARD SIMILAR TO INSTAGRAM WHICH CONTAIN A LIKES COUNTER AND ALL OTHER ICONS
+
+2-Implemented zooming feature as discussed for a 20% weightage in the third task
+
+3-Implemented full screen videos with like counter and other icons similar to reel watching on Instagram it is mentioned that it has 45% weightage
+
+4-I HAVE IMPLEMENTED DIFFERENT TYPES FOR UPLOADING IMAGE AND ONE FOR PROFILE AND ONE FOR REEL ALSO
 
 We Are using Expo to build the app. Expo is a free and open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
 https://docs.expo.dev/
@@ -9,7 +17,9 @@ https://youtu.be/JKccS9k56_I?si=ogZiYkmLR7w4EGML
 ![alt text](photo_2025-01-20_00-21-29.jpg)
 ![alt text](photo_2025-01-20_00-21-00.jpg)
 ## Working Video
-https://drive.google.com/file/d/1TUPj2LQcjXZV7Pde0d-JBn6JTuq7HgoY/view?usp=sharing
+
+https://drive.google.com/drive/folders/1dFPDiwsR_Xq7-GHbjPlQL6tKUg7twRDd
+
 ## Expo Installation
 
 https://docs.expo.dev/router/installation/#manual-installation
