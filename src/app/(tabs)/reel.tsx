@@ -3,7 +3,6 @@ import { View, Text, FlatList, Dimensions } from "react-native";
 import VideoScreen from "../../components/videoscreen";
 
 const { height } = Dimensions.get("window");
-
 const reel = () => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -40,7 +39,7 @@ const reel = () => {
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View className="h-screen">
-            <VideoScreen videoSource={item.videos.small.url} />
+            <VideoScreen videoSource={item.videos.tiny.url} />
           </View>
         )}
         pagingEnabled
