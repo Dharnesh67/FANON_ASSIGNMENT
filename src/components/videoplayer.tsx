@@ -5,7 +5,7 @@ import { StyleSheet, View, Button } from "react-native";
 export default function VideoScreen({videoSource}:any) {
   const player = useVideoPlayer(videoSource, (player) => {
     player.loop = true;
-    player.play();
+    player.pause();
   });
 
   const { isPlaying } = useEvent(player, "playingChange", { isPlaying: player.playing });

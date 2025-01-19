@@ -25,3 +25,11 @@ https://docs.expo.dev/tutorial/image-picker/
 
 ## double tap gesture added
 https://docs.expo.dev/tutorial/gestures/#add-a-tap-gesture
+
+
+## eXPO vIDEO 
+https://docs.expo.dev/versions/latest/sdk/video/
+
+
+## Cloudinary 
+https://cloudinary.com/documentation/react_native_integration

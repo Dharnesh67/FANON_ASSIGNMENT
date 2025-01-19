@@ -2,10 +2,16 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import ZoomableImage from "../components/zooomedimage";
 import { FontAwesome, Ionicons, Feather, AntDesign } from "@expo/vector-icons";
-import { Gesture, GestureDetector } from "react-native-gesture-handler";
+import { Gesture, GestureDetector, GestureHandlerRootView } from "react-native-gesture-handler";
 import VideoScreen from "./videoplayer";
+import { Cloudinary } from "@cloudinary/url-gen";
 import { useState } from "react";
-const Postlistitem = (props: any) => {
+import { AdvancedImage } from 'cloudinary-react-native';
+import { cld } from "../Lib/cloudinary";
+// Create a Cloudinary instance and set your cloud name.
+const Postlistitem = ({post}: any) => {
+  
+    // cld.image returns a CloudinaryImage with the configuration set.
   const [isliked, setisliked] = useState(false);
   const [likecounter, setlikecounter] = useState(7);
   const Handlelike = () => {
@@ -20,24 +26,26 @@ const Postlistitem = (props: any) => {
     .numberOfTaps(2)
     .onStart(() => {
       console.log("Double Tap"); // Double tap event
+      // Handlelike();
     });
-  const post = props.post;
   return (
-    <View>
-      <View className="bg-white ">
+    <GestureHandlerRootView>
+      <View className="bg-white border border-gray-200 rounded-2xl ">
         <View className="flex-row items-center p-1 gap-2 card ">
-          <Image source={{ uri: post.user.image_url }} className="w-12 aspect-[1] rounded-full" />
+          {/* <Image source={{ uri: post.user.image_url }} className="w-12 aspect-[1] rounded-full" /> */}
+          <AdvancedImage cldImg={cld.image(post.user.avatar_url)} className="w-12 aspect-[1] rounded-full"  />
           <Text className="font-semibold">{post.user.username}</Text>
         </View>
         {/* <ZoomableImage imageSource={{ uri: post.image_url }} /> */}
       {post.isvideo=='false' && <GestureDetector gesture={doubleTap}>
           <ZoomableImage
             imageComponent={
-              <Image
-                source={{ uri: post.image_url }}
-                className="w-full h-full"
-                resizeMode="contain"
-              />
+              <AdvancedImage cldImg={cld.image(post.image)} className="w-full h-full"  />
+              // <Image
+              //   source={{ uri: post.image_url }}
+              //   className="w-full h-full"
+              //   resizeMode="contain"
+              // />
             }
           />
         </GestureDetector>}
@@ -58,7 +66,7 @@ const Postlistitem = (props: any) => {
           </View>
         </View>
       </View>
-    </View>
+    </GestureHandlerRootView>
   );
 };
 

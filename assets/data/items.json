@@ -3,12 +3,12 @@
     "id": "1",
     "isvideo": "false",
     "image": "samples/landscapes/beach-boat",
-    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
+    "image_url": "",
     "caption": "A peaceful beach with a boat on the shore. Perfect for a relaxing vacation!",
     "user": {
       "id": "u1",
       "avatar_url": "samples/people/boy-snow-hoodie",
-      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
       "username": "vadimnotjustdev"
     }
   },
@@ -16,12 +16,12 @@
     "id": "2",
     "isvideo": "true",
     "image": "samples/woman-on-a-football-field",
-    "video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "video_url": "",
     "caption": "A determined athlete practicing on a football field under the sunset.",
     "user": {
       "id": "u2",
       "avatar_url": "samples/people/smiling-man",
-      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
       "username": "sportsfanatic123"
     }
   },
@@ -29,12 +29,12 @@
     "id": "3",
     "isvideo": "false",
     "image": "samples/dessert-on-a-plate",
-    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
+    "image_url": "",
     "caption": "A delicious dessert that looks like it’s straight out of a gourmet kitchen.",
     "user": {
       "id": "u3",
       "avatar_url": "samples/bike",
-      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
       "username": "foodiegal"
     }
   },
@@ -42,12 +42,12 @@
     "id": "4",
     "isvideo": "false",
     "image": "samples/balloons",
-    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
+    "image_url": "",
     "caption": "Colorful balloons floating in the sky, spreading joy and happiness.",
     "user": {
       "id": "u4",
       "avatar_url": "samples/animals/cat",
-      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
       "username": "balloonlover"
     }
   },
@@ -55,26 +55,52 @@
     "id": "5",
     "isvideo": "false",
     "image": "samples/woman-on-a-football-field",
-    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
+    "image_url": "",
     "caption": "A determined athlete practicing on a football field under the sunset.",
     "user": {
       "id": "u2",
       "avatar_url": "samples/people/smiling-man",
-      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
       "username": "sportsfanatic123"
     }
   },
   {
     "id": "6",
     "isvideo": "false",
-    "image": "samples/mountain-sunrise",
-    "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
+    "image": "samples/woman-on-a-football-field",
+    "image_url": "",
     "caption": "A breathtaking view of the mountains at sunrise, perfect for adventure lovers.",
     "user": {
       "id": "u5",
       "avatar_url": "samples/animals/dog",
-      "image_url": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
       "username": "natureexplorer"
+    }
+  },
+  {
+    "id": "7",
+    "isvideo": "false",
+    "image": "samples/sunset-ocean",
+    "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
+    "caption": "A serene sunset over the ocean, perfect for unwinding.",
+    "user": {
+      "id": "u6",
+      "avatar_url": "samples/people/woman-sunset",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
+      "username": "oceanlover123"
+    }
+  },
+  {
+    "id": "8",
+    "isvideo": "true",
+    "image": "samples/woman-on-a-football-field",
+    "video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "caption": "A hiker walking through a beautiful green forest trail.",
+    "user": {
+      "id": "u7",
+      "avatar_url": "samples/people/people/hiker",
+      "image_url": "https://i.pinimg.com/736x/a2/c4/67/a2c4671c79b7068805ef01aca90a2856.jpg",
+      "username": "naturewanderer"
     }
   }
 ]
