@@ -1,5 +1,5 @@
 # FANON_ASSIGNMENT
-##TASK COMPLETED  ✅
+## TASK COMPLETED  ✅
 
 1.FETCHED RANDOMIMAGE FROM PIXABAY AND SHOWN AS A CARD SIMILAR TO INSTAGRAM WHICH CONTAIN A LIKES COUNTER AND ALL OTHER ICONS
 
@@ -51,3 +51,10 @@ https://cloudinary.com/documentation/react_native_integration
 
 ## Pixa Bay
 https://pixabay.com/api/docs/
+
+# Getting Error While Building APK
+
+✖ Build failed
+
+🤖 Android build failed:
+Gradle build failed with unknown error. See logs for the "Run gradlew" (https://expo.dev/accounts/dharmesh004/projects/assignment/builds/3e8adba2-ade5-4606-9d7f-4465ad045ab2#run-gradlew) phase for more information.
